@@ -1,0 +1,14 @@
+- Akteure (akteure): vorname[string/text], nachname[string/text], name_organisation[string/text], akteurstyp[lookup/select], externer_verweis[string/url]
+- Bedeutungsknoten (bedeutungsknoten): titel[string/text], beschreibung[string/textarea], knotentyp[lookup/select], status[lookup/select], ersteller[applookup/select], erstellt_am[date/datetimeminute], aktualisiert_am[date/datetimeminute]
+  → ersteller links to app_id 6a58d592d41d51dcf339b82e
+- Knotenbeziehungen (knotenbeziehungen): quellknoten[applookup/select], zielknoten[applookup/select], beziehungstyp[lookup/select], konfidenz[number], beziehung_ersteller[applookup/select], beziehung_erstellt_am[date/datetimeminute]
+  → quellknoten links to app_id 6a58d598b5197f8a71859836
+  → zielknoten links to app_id 6a58d598b5197f8a71859836
+  → beziehung_ersteller links to app_id 6a58d592d41d51dcf339b82e
+- Externe Objekte (externe_objekte): systemname[string/text], objekttyp[string/text], objekt_id[string/text], extern_titel[string/text], extern_url[string/url]
+- Bedeutungsverknüpfungen (bedeutungsverknuepfungen): verknuepfung_knoten[applookup/select], verknuepfung_extern[applookup/select], verknuepfungstyp[lookup/select]
+  → verknuepfung_knoten links to app_id 6a58d598b5197f8a71859836
+  → verknuepfung_extern links to app_id 6a58d5999b474d0c231e8c4c
+- Bedeutungsereignisse (bedeutungsereignisse): ereignistyp[lookup/select], ereignis_knoten[applookup/select], ereignis_akteur[applookup/select], zeitstempel[date/datetimeminute], payload[string/textarea]
+  → ereignis_knoten links to app_id 6a58d598b5197f8a71859836
+  → ereignis_akteur links to app_id 6a58d592d41d51dcf339b82e

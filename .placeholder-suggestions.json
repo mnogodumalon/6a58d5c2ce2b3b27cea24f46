@@ -1,0 +1,45 @@
+{
+  "AkteureDialog.tsx": {
+    "vorname": "z. B. Max",
+    "nachname": "z. B. Mustermann",
+    "name_organisation": "z. B. Wirkraum GmbH",
+    "akteurstyp": "Welcher Akteurstyp?",
+    "externer_verweis": "z. B. https://example.com"
+  },
+  "BedeutungsknotenDialog.tsx": {
+    "titel": "Prägnanter Titel",
+    "beschreibung": "Was bedeutet dieser Knoten? Kontext, Hintergrund, Implikationen...",
+    "knotentyp": "Typ des Knotens wählen",
+    "status": "Status wählen",
+    "ersteller": "Wer hat es erstellt?",
+    "erstellt_am": "Wann wurde es erstellt?",
+    "aktualisiert_am": "Zuletzt aktualisiert?"
+  },
+  "KnotenbeziehungenDialog.tsx": {
+    "quellknoten": "Ausgangspunkt wählen",
+    "zielknoten": "Zielknoten wählen",
+    "beziehungstyp": "Art der Beziehung wählen",
+    "konfidenz": "z. B. 85",
+    "beziehung_ersteller": "Wer hat es erstellt?",
+    "beziehung_erstellt_am": "Wann wurde es erstellt?"
+  },
+  "ExterneObjekteDialog.tsx": {
+    "systemname": "z. B. GitHub",
+    "objekttyp": "z. B. Repository",
+    "objekt_id": "z. B. repo-12345",
+    "extern_titel": "Name des Objekts",
+    "extern_url": "z. B. https://github.com/..."
+  },
+  "BedeutungsverknuepfungenDialog.tsx": {
+    "verknuepfung_knoten": "Welcher Knoten?",
+    "verknuepfung_extern": "Welches externe Objekt?",
+    "verknuepfungstyp": "Art der Verknüpfung wählen"
+  },
+  "BedeutungsereignisseDialog.tsx": {
+    "ereignistyp": "Art des Ereignisses wählen",
+    "ereignis_knoten": "Betroffener Knoten?",
+    "ereignis_akteur": "Wer hat es ausgelöst?",
+    "zeitstempel": "Wann fand es statt?",
+    "payload": "Zusätzliche Daten, JSON, Details..."
+  }
+}

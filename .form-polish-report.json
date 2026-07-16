@@ -1,0 +1,40 @@
+{
+  "entities": {
+    "Akteure": {
+      "placeholders_set": 5,
+      "defaults_keys": ["akteurstyp"],
+      "computed_keys": [],
+      "reason": "Reine Stammdaten (Name, Typ, Link). Keine Berechnungen möglich — kein Preis/Menge/Datum-Paar."
+    },
+    "Bedeutungsknoten": {
+      "placeholders_set": 7,
+      "defaults_keys": ["status", "erstellt_am", "aktualisiert_am"],
+      "computed_keys": [],
+      "reason": "Knowledge-Graph-Knoten mit Metadaten. Keine Berechnungen — reine Stamm- und Audit-Felder."
+    },
+    "Knotenbeziehungen": {
+      "placeholders_set": 6,
+      "defaults_keys": ["beziehung_erstellt_am"],
+      "computed_keys": [],
+      "reason": "Verknüpfung zwischen zwei Knoten + Konfidenz-Prozent (0–100, numberFields.max=100). Keine Berechnungen."
+    },
+    "Externe Objekte": {
+      "placeholders_set": 5,
+      "defaults_keys": [],
+      "computed_keys": [],
+      "reason": "Reine Referenz-Stammdaten (System, Objekt-ID, Link). Keine Berechnungen."
+    },
+    "Bedeutungsverknüpfungen": {
+      "placeholders_set": 3,
+      "defaults_keys": [],
+      "computed_keys": [],
+      "reason": "Bridge-Entity zwischen Knoten und externe Objekte. Keine Berechnungen — reine Verknüpfungslogik."
+    },
+    "Bedeutungsereignisse": {
+      "placeholders_set": 5,
+      "defaults_keys": ["zeitstempel"],
+      "computed_keys": [],
+      "reason": "Event-Log mit Typ, Akteur, Zeitstempel, Payload. Keine Berechnungen — reine Audit-Daten."
+    }
+  }
+}

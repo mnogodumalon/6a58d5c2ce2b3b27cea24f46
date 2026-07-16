@@ -1,0 +1,88 @@
+{
+  "version": 1,
+  "forms": [
+    {
+      "entity": "akteure",
+      "app_id": "6a58d592d41d51dcf339b82e",
+      "path": "/rest/apps/6a58d592d41d51dcf339b82e/records",
+      "allowed_fields": [
+        "vorname",
+        "nachname",
+        "name_organisation",
+        "akteurstyp",
+        "externer_verweis"
+      ],
+      "pow": true,
+      "pow_difficulty": 50000,
+      "title": "Akteure — Formular"
+    },
+    {
+      "entity": "bedeutungsknoten",
+      "app_id": "6a58d598b5197f8a71859836",
+      "path": "/rest/apps/6a58d598b5197f8a71859836/records",
+      "allowed_fields": [
+        "titel",
+        "beschreibung",
+        "knotentyp",
+        "status",
+        "erstellt_am",
+        "aktualisiert_am"
+      ],
+      "pow": true,
+      "pow_difficulty": 50000,
+      "title": "Bedeutungsknoten — Formular"
+    },
+    {
+      "entity": "knotenbeziehungen",
+      "app_id": "6a58d59945d4b015c290e16a",
+      "path": "/rest/apps/6a58d59945d4b015c290e16a/records",
+      "allowed_fields": [
+        "beziehungstyp",
+        "konfidenz",
+        "beziehung_erstellt_am"
+      ],
+      "pow": true,
+      "pow_difficulty": 50000,
+      "title": "Knotenbeziehungen — Formular"
+    },
+    {
+      "entity": "externe_objekte",
+      "app_id": "6a58d5999b474d0c231e8c4c",
+      "path": "/rest/apps/6a58d5999b474d0c231e8c4c/records",
+      "allowed_fields": [
+        "systemname",
+        "objekttyp",
+        "objekt_id",
+        "extern_titel",
+        "extern_url"
+      ],
+      "pow": true,
+      "pow_difficulty": 50000,
+      "title": "Externe Objekte — Formular"
+    },
+    {
+      "entity": "bedeutungsverknuepfungen",
+      "app_id": "6a58d59a91aa765b8b8ef82e",
+      "path": "/rest/apps/6a58d59a91aa765b8b8ef82e/records",
+      "allowed_fields": [
+        "verknuepfungstyp"
+      ],
+      "pow": true,
+      "pow_difficulty": 50000,
+      "title": "Bedeutungsverknüpfungen — Formular"
+    },
+    {
+      "entity": "bedeutungsereignisse",
+      "app_id": "6a58d59a950bc3b73c446a47",
+      "path": "/rest/apps/6a58d59a950bc3b73c446a47/records",
+      "allowed_fields": [
+        "ereignistyp",
+        "zeitstempel",
+        "payload"
+      ],
+      "pow": true,
+      "pow_difficulty": 50000,
+      "title": "Bedeutungsereignisse — Formular"
+    }
+  ]
+}
