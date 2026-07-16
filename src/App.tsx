@@ -28,6 +28,7 @@ import PublicFormBedeutungsereignisse from '@/pages/public/PublicForm_Bedeutungs
 // <public:imports>
 // </public:imports>
 // <custom:imports>
+const KnotenErstellenPage = lazy(() => import('@/pages/intents/KnotenErstellenPage'));
 // </custom:imports>
 
 export default function App() {
@@ -61,6 +62,7 @@ export default function App() {
                 <Route path="bedeutungsereignisse/:id" element={<BedeutungsereignisseDetailPage />} />
                 <Route path="admin" element={<AdminPage />} />
                 {/* <custom:routes> */}
+                <Route path="intents/knoten-erstellen" element={<Suspense fallback={null}><KnotenErstellenPage /></Suspense>} />
                 {/* </custom:routes> */}
               </Route>
             </Routes>
